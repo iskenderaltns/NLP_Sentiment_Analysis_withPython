@@ -3,7 +3,7 @@ Sentiment analysis on customer comments with Vader and developing a primitive se
 ## *Related work*
 As a result of my research on this topic, many have analyzed the consistency of scoring and interpretation. Some used the Vader sentiment analysis available in the NLTK library for this, while others made predictions by text preprocessing and model building.
 
-## *Approach For the Classification of Comments*
+## *Approach For the Sentiment Analysis of Comments*
 
 In line with my research VADER sentiment analysis works best on short documents, like tweets and sentences, not on large documents. Also, this model doesn't just look at words. Many conjunctions such as capitalizing or lowering the word, punctuation marks in the sentence, and the word "but" also affect the scoring. Therefore, we do not need to do text preprocessing in this part of this project. But there is a  problem here too. Although Vader sentiment analysis seems like a good model, sometimes he can  come across sentences that he cannot decipher, or rather make a wrong analysis.
 For example, Let's have two comments. 
