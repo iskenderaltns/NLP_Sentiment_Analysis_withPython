@@ -85,7 +85,7 @@ For 𝛼 = 1/100∗max_𝑣𝑎𝑙𝑢e
 | Jackets |  552 | 327 |
 | Trend |  75 | 32 |
 
-For 𝛼 = 1 50∗max \_𝑣𝑎𝑙𝑢e
+For 𝛼 = 1/50∗max_𝑣𝑎𝑙𝑢e
 
 | Department Distribution by Sentiment based on the ratings |   Matched  |  Did not match |
 |----------|:-------------:|------:|
