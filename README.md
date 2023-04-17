@@ -1,4 +1,4 @@
-# **NLP_Sentiment_Analysis**
+# **NLP Sentiment Analysis**
 Sentiment analysis on customer comments with Vader and developing a primitive sentiment analysis method
 ## *Related work*
 As a result of my research on this topic, many have analyzed the consistency of scoring and interpretation. Some used the Vader sentiment analysis available in the NLTK library for this, while others made predictions by text preprocessing and model building.
@@ -24,7 +24,8 @@ I also need to clean up unnecessary words, numbers, punctuation before scoring w
 dresses that are considered neutral in Vader sentiment analysis. I also must do some pre-cleaning for my algorithm to give a quick result. After cleaning is over, I rate the remaining words in each comment according to their rating. My approach here is, for example, if the word “tight” is used mostly in positive comments, this will show that people are actually using the word “tight” in a positive way. Or if this word is always used in comments that get 1 or 2 ratings, it will mean that the word is negative.
 Therefore, I scored the words with the formula I created below.
 
-- **𝑠𝑐𝑜𝑟𝑒 𝑜𝑓 𝑡ℎ𝑒 𝑤𝑜𝑟𝑑  =  ∑(𝑓(𝑖)𝑔(𝑖, 𝑤𝑜𝑟𝑑)) 𝛼 ,𝑖 ∈ 𝐼 **
+- 𝑠𝑐𝑜𝑟𝑒 𝑜𝑓 𝑡ℎ𝑒 𝑤𝑜𝑟𝑑  =  ∑(𝑓(𝑖)𝑔(𝑖, 𝑤𝑜𝑟𝑑)) 𝛼 ,𝑖 ∈ 𝐼 
+
 𝑤ℎ𝑒𝑟𝑒 𝑖 = 𝑖𝑛𝑑𝑒𝑥 𝑎𝑛𝑑 𝐼 = 𝑡ℎ𝑒 𝑠𝑒𝑡 𝑜𝑓 𝐼𝑛𝑡𝑒𝑔𝑒𝑟𝑠 𝑓𝑟𝑜𝑚 1 𝑡𝑜 𝑡ℎ𝑒 𝑡𝑜𝑡𝑎𝑙 𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑟𝑒𝑣𝑖𝑒𝑤𝑠
 𝑓(𝑖) = 𝑟𝑎𝑡𝑖𝑛𝑔. 𝑟𝑒𝑣𝑖𝑒𝑤(𝑖) − 3 𝑎𝑛𝑑 𝑔(𝑖, 𝑤𝑜𝑟𝑑) = 𝑡ℎ𝑒 𝑛𝑢𝑚𝑏𝑒𝑟 𝑜𝑓 𝑟𝑒𝑝𝑒𝑡𝑖𝑡𝑖𝑜𝑛𝑠 𝑜𝑓 𝑡ℎ𝑒 𝑤𝑜𝑟𝑑 𝑖𝑛 𝑡ℎ𝑒 "i'th" 𝑟𝑒𝑣𝑖𝑒𝑤
 
